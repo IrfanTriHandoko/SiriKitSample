@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w3w-4o-bY9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Profile-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgJ-Fq-dDl">
+                                <rect key="frame" x="20" y="416" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jJ-BL-d5r">
+                                <rect key="frame" x="20" y="458.5" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-hd-dHa">
+                                <rect key="frame" x="20" y="496" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-profile-image" translatesAutoresizingMaskIntoConstraints="NO" id="16A-sD-1wW" customClass="RoundedImageView" customModule="My_Profile" customModuleProvider="target">
+                                <rect key="frame" x="138" y="238" width="138" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="16A-sD-1wW" secondAttribute="height" multiplier="1:1" id="tei-C4-eO0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cpe-hd-dHa" firstAttribute="top" secondItem="5jJ-BL-d5r" secondAttribute="bottom" constant="16" id="E86-pG-KLu"/>
+                            <constraint firstItem="16A-sD-1wW" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="1/3" id="ICw-kd-Bsb"/>
+                            <constraint firstItem="16A-sD-1wW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NTZ-31-eQM"/>
+                            <constraint firstItem="EgJ-Fq-dDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RSh-Ht-h3e"/>
+                            <constraint firstItem="EgJ-Fq-dDl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-40" id="UBS-xA-ifX"/>
+                            <constraint firstItem="Cpe-hd-dHa" firstAttribute="leading" secondItem="5jJ-BL-d5r" secondAttribute="leading" id="UOb-wQ-FCu"/>
+                            <constraint firstItem="Cpe-hd-dHa" firstAttribute="trailing" secondItem="5jJ-BL-d5r" secondAttribute="trailing" id="Y8l-Mz-55Z"/>
+                            <constraint firstItem="5jJ-BL-d5r" firstAttribute="trailing" secondItem="EgJ-Fq-dDl" secondAttribute="trailing" id="d7I-Z3-Fvw"/>
+                            <constraint firstItem="5jJ-BL-d5r" firstAttribute="top" secondItem="EgJ-Fq-dDl" secondAttribute="bottom" constant="4" id="dei-a0-9Qo"/>
+                            <constraint firstItem="16A-sD-1wW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oys-vk-sYX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EgJ-Fq-dDl" secondAttribute="trailing" constant="20" id="qcZ-m6-abX"/>
+                            <constraint firstItem="EgJ-Fq-dDl" firstAttribute="top" secondItem="16A-sD-1wW" secondAttribute="bottom" constant="40" id="yPJ-Ur-gd4"/>
+                            <constraint firstItem="5jJ-BL-d5r" firstAttribute="leading" secondItem="EgJ-Fq-dDl" secondAttribute="leading" id="z0o-rv-azK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Profile" id="Ii1-jQ-U7j"/>
+                    <connections>
+                        <outlet property="addressLbl" destination="5jJ-BL-d5r" id="rdv-7k-jK4"/>
+                        <outlet property="mottoLbl" destination="Cpe-hd-dHa" id="3bO-WC-KTP"/>
+                        <outlet property="nameLbl" destination="EgJ-Fq-dDl" id="v1W-B8-gFd"/>
+                        <outlet property="profileImg" destination="16A-sD-1wW" id="Szq-sD-GB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gTe-n4-bgy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w3w-4o-bY9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qOg-r0-05Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9G4-kC-XiH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTg-Pu-gQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-profile-image" width="517" height="523"/>
+    </resources>
+</document>
